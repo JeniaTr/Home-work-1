@@ -9,10 +9,10 @@ $coord2 = new Coordinate(49.426007, 32.094617);
 
 $calculator = new Vincenty();
 
-echo 'Дом----Geekhub';
+echo '<h1>   Дом  <-------->  Geekhub  </h1>';
 echo '<br>';
 echo '<br>';
-echo 'Ростояние между двумя кординатами :  ', $calculator->getDistance($coord1, $coord2), ' метров';
+echo 'Растояние между двумя кординатами :  ', $calculator->getDistance($coord1, $coord2), ' метров';
 
 
 ?>
