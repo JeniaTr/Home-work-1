@@ -14,5 +14,22 @@ echo '<br>';
 echo '<br>';
 echo 'Ростояние между двумя кординатами :  ', $calculator->getDistance($coord1, $coord2), ' метров';
 
+//=====================================================
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<=====================================================================>';
+echo '<br>';
+echo '<br>';
+
+
+use Temperature\Factory\DefaultFactory as TemperatureFactory;
+
+$factory = new TemperatureFactory();
+$temper = $factory->build(88, 'F');
+
+echo 'Температура в: ', $temper, '  = ', $temper->convert('C')->setPrecision(2);
+
 
 ?>
+
